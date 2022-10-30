@@ -21,4 +21,9 @@ Please critique and let me know what I have missed.
 ## Credit
 
 Beyondtheflag.com for the image
+
 https://www.w3schools.com/css/css3_images.asp
+
+w3schools.com
+
+Mike Dane of Giraffe Academy

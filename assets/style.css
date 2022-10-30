@@ -18,7 +18,7 @@
 
 header {
     width: 100%;
-    height: 60px;
+    height: 85px;
     background-color: var(--blue);    
     font-size: 60px;    
 }
@@ -27,16 +27,38 @@ header {
     width: 100%;
     text-align: right;
     padding: 0 0 0 0;       
-    background-color: var(--yellow);
-    margin-top: -27px;  
-          
+    margin-top: 0px;            
 }
 
 .hypers li {
     margin-left: 25px;
-    margin-right: 25px;    
-    display: inline-block;   
-    font-size: 24px;    
+    margin-right: 25px;  
+    padding-left: 5px;  
+    padding-right: 5px;
+    display: inline;   
+    font-size: 24px;      
+}
+
+@keyframes change-color {
+  from {background-color: none;}
+  to {background-color: var(--yellow);}  
+}
+
+@keyframes text-color {
+  from {color: var(--yellow);}
+  to {color: var(--blue);}
+}
+
+li:hover {
+  animation-name: change-color;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards; 
+}
+
+a:hover {
+  animation-name: text-color;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 a {
@@ -62,6 +84,7 @@ h1 {
     background-size: cover;
     background-position: center;
     margin-bottom: 40px;
+    border-top: 2px solid var(--yellow);
     border-bottom: 15px solid var(--yellow);
 }
 
